@@ -31,7 +31,7 @@ celestia-appd version
 git clone https://github.com/celestiaorg/networks
 
 -------------------------------
-cd $HOMEE
+cd $HOME
 rm -rf networks
 git clone https://github.com/celestiaorg/networks.git
 
@@ -43,7 +43,7 @@ CELESTIA_CHAIN="mamaki"
 اطلاعات  داخل "" رو پاک کنید(فقط خط اول و دوم) و اطلاعات خودتون رو قرار بدید
 به عنوان مثال 
 
-CELESTIA_NODENAME="alii" 
+CELESTIA_NODENAME="ali" 
 CELESTIA_WALLET="ali1066"
 CELESTIA_CHAIN="mamaki"
 
@@ -54,7 +54,7 @@ echo 'export CELESTIA_WALLET='${CELESTIA_WALLET} >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 ------------------------------------------------
-celestia-appd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
+celestia-appdd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
 
 -------------------------------------
 cp $HOME/networks/mamaki/genesis.json $HOME/.celestia-app/config/
