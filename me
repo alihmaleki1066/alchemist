@@ -66,7 +66,7 @@ sed -i 's/mode = \"full\"/mode =\"validator\"/g' $HOME/.celestia-app/config/conf
 BOOTSTRAP_PEERS=$(curl -sL https://raw.githubusercontent.com/celestiaorg/networks/master/mamaki/bootstrap-peers.txt | tr -d '\n')
 
 --------------------------------------------------
-echo $BOOTSTRAP_PEERS
+echo $BOOTSTRAP_PERS
 ------------------------------------------------
 sed -i.bakk -e "s/^bootstrap-peers *=.*/bootstrap-peers = \"$BOOTSTRAP_PEERS\"/" $HOME/celestia-app/config/config.toml
 
