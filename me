@@ -16,7 +16,7 @@ source $HOME/.bash_profile
 ---------------------------------------------------
 go ver
 
---------------------------------------
+---------------------------------------
 CD $HOME
 rm -rf celestia-app
 git clone https://github.com/celestiaorg/celestia-app.git
@@ -77,7 +77,7 @@ sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' 
 -----------------------------------------------------------------
 max_num_inbound_peers=40
 max_num_outbound_peers=10
-max_connections=500
+max_connections=50
 
 ----------------------------------------------------------------
 sed -i -e "s/^use-legacy *=.*/use-legacy = false/;\
