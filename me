@@ -63,7 +63,7 @@ Cp $HOME/networks/mamaki/genesis.jsonn $HOME/.celestia-app/config
 sed -i 's/mode = \"full\"/mode =\"validator\"/g' $HOME/.celestia-app/config/config.toml
 
 ---------------------------------------------
-BOOTSTRAP_PEERS=$(curl -sL https://raw.githubusercontent.com/celestiaorg/networks/master/mamaki/bootstrap-peers.txt | tr -d '\n')
+BOOTSTRAP_PEERS=$(curl -sL https://raw.githubusercontent.com/celestiaorg/networks/master/mamaki/bootstrap-peers.txt |( tr -d '\n')
 
 --------------------------------------------------
 echo $BOOTSTRAP_PERS
